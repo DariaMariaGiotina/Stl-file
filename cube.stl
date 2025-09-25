@@ -1,7 +1,7 @@
 # Create a simple ASCII STL file representing a cube and save it as cube.stl in the assets folder
 
 # Define the content of a basic cube in ASCII STL format
-cube_stl_content = """solid cube
+cube_stl_content = solid cube
   facet normal 0 0 0
     outer loop
       vertex 0 0 0
@@ -87,7 +87,7 @@ cube_stl_content = """solid cube
     endloop
   endfacet
 endsolid cube
-"""
+
 
 # Create the assets folder and save the STL file
 import os
@@ -98,4 +98,5 @@ with open("assets/cube.stl", "w") as f:
     f.write(cube_stl_content)
 
 print("Sample STL file 'cube.stl' has been created in the assets folder.")
+
 
